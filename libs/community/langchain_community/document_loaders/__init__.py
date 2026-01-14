@@ -184,6 +184,9 @@ if TYPE_CHECKING:
     from langchain_community.document_loaders.evernote import (
         EverNoteLoader,
     )
+    from langchain_community.document_loaders.excel_h_loader import (
+        ExcelHLoader,
+    )
     from langchain_community.document_loaders.excel import (
         UnstructuredExcelLoader,
     )
@@ -597,6 +600,7 @@ _module_lookup = {
     "DuckDBLoader": "langchain_community.document_loaders.duckdb_loader",
     "EtherscanLoader": "langchain_community.document_loaders.etherscan",
     "EverNoteLoader": "langchain_community.document_loaders.evernote",
+    "ExcelHLoader": "langchain_community.document_loaders.excel_h_loader",
     "FacebookChatLoader": "langchain_community.document_loaders.facebook_chat",
     "FaunaLoader": "langchain_community.document_loaders.fauna",
     "FigmaFileLoader": "langchain_community.document_loaders.figma",
@@ -805,6 +809,7 @@ __all__ = [
     "DuckDBLoader",
     "EtherscanLoader",
     "EverNoteLoader",
+    "ExcelHLoader",
     "FacebookChatLoader",
     "FaunaLoader",
     "FigmaFileLoader",
